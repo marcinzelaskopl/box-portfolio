@@ -7,6 +7,12 @@ class Nav extends Component {
             <div className='grid-container'>
                 <div className='row'>
                     <div className='col-12'>
+                        <ul>
+                            <li>HOME</li>
+                            <li>ABOUT ME</li>
+                            <li>PROJECTS</li>
+                            <li>CONTACT</li>
+                        </ul>
                     </div>
                 </div>
             </div>
