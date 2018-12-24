@@ -1,0 +1,12 @@
+.nav {
+    height: 10vh;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+        p {
+            margin-left: 20px;
+        }
+        .home {
+            margin-right: auto;
+        }
+}

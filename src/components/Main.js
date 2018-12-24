@@ -1,16 +1,12 @@
 import React, { Component } from 'react';
 import '../App.scss';
 
-class Nav extends Component {
+class Main extends Component {
     render() {
         return (
             <div className='grid-container'>
                 <div className='row'>
-                    <div className='col-12 nav'>
-                        <p className='home'>HOME</p>
-                        <p>ABOUT</p>
-                        <p>PROJECTS</p>
-                        <p>CONTACT</p>
+                    <div class='col-12'>
                     </div>
                 </div>
             </div>
@@ -18,4 +14,4 @@ class Nav extends Component {
     }
 }
 
-export default Nav
+export default Main
