@@ -24,7 +24,7 @@ class Main extends Component {
     
     handleBox = () => {
         this.setState ({
-            width: '20vw',
+            width: '30vw',
             text: <Typing><h1>Hello, welcome to my portfolio!</h1></Typing>,
             arrow: <Slide bottom><div><div onClick={this.scrollToMyRef} className='arrow'></div></div></Slide>,
         })

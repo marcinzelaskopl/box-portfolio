@@ -5,8 +5,10 @@
     display: flex;
     justify-content: space-around;
     align-items: center;
+    transition: ease-in-out 0.5s;
         p {
             margin-left: 20px;
+            margin-right: 20px;
         }
         .home {
             margin-right: auto;
