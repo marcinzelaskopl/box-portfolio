@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import Typing from 'react-typing-animation';
+import Slide from 'react-reveal/Slide';
 import '../App.scss';
 
 class Main extends Component {
@@ -8,13 +9,15 @@ class Main extends Component {
 
         this.state = {
             width: '',
-            text: ''
+            text: '',
+            arrow: ''
         }
     }
     handleBox = () => {
         this.setState ({
             width: '20vw',
             text: <Typing><h1>Hello, welcome to my portfolio!</h1></Typing>,
+            arrow: <Slide bottom><div><div className='arrow'></div></div></Slide>,
         })
     }
     handleBoxLeave = () => {
@@ -29,8 +32,9 @@ class Main extends Component {
                 <div className='row'>
                     <div class='col-12 main'>
                         <div onMouseLeave={this.handleBoxLeave} onMouseEnter={this.handleBox} style={{width: this.state.width}} className='box'>
-                        {this.state.text}
+                            {this.state.text}
                         </div>
+                        {this.state.arrow}
                     </div>
                 </div>
             </div>
