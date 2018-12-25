@@ -2,22 +2,31 @@ import React, { Component } from 'react';
 import Typing from 'react-typing-animation';
 import Slide from 'react-reveal/Slide';
 import '../App.scss';
+import About from './About';
 
 class Main extends Component {
     constructor(props) {
         super(props);
+        this.myRef = React.createRef();
 
         this.state = {
             width: '',
             text: '',
-            arrow: ''
+            arrow: '',
         }
     }
+    scrollToMyRef = () => {
+        window.scrollTo({
+            top:this.myRef.current.offsetTop-20, 
+            behavior: "smooth"
+        })
+    }
+    
     handleBox = () => {
         this.setState ({
             width: '20vw',
             text: <Typing><h1>Hello, welcome to my portfolio!</h1></Typing>,
-            arrow: <Slide bottom><div><div className='arrow'></div></div></Slide>,
+            arrow: <Slide bottom><div><div onClick={this.scrollToMyRef} className='arrow'></div></div></Slide>,
         })
     }
     handleBoxLeave = () => {
@@ -36,6 +45,9 @@ class Main extends Component {
                         </div>
                         {this.state.arrow}
                     </div>
+                </div>
+                <div ref={this.myRef}>
+                <About/>
                 </div>
             </div>
         )
