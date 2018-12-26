@@ -39,7 +39,7 @@ class Main extends Component {
         return (
             <div className='grid-container'>
                 <div className='row'>
-                    <div class='col-12 main'>
+                    <div className='col-12 main'>
                         <div onMouseLeave={this.handleBoxLeave} onMouseEnter={this.handleBox} style={{width: this.state.width}} className='box'>
                             {this.state.text}
                         </div>
