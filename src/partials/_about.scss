@@ -1,6 +1,19 @@
 .about {
-    height: 100vh;
+    height: 40vh;
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-direction: column;
+    font-size: 35px;
+        h1 {
+            letter-spacing: 5px;
+        }
+}
+
+.about-photo-cont {
+    height: 60vh;
+    background-image: url('./images/about-photo.jpg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
 }

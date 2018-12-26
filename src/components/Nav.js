@@ -26,7 +26,7 @@ class Nav extends Component {
             <div className='grid-container'>
                 <div className='row'>
                     <div style={{backgroundColor: this.state.isTop ? 'white': 'black', color: this.state.isTop ? 'black' : 'white'}} className='col-12 nav'>
-                        <p className='home'>HOME</p>
+                        <p className='home'><a style={{color: this.state.isTop ? 'black' : 'white'}} href='#home'>HOME</a></p>
                         <a style={{color: this.state.isTop ? 'black' : 'white'}} href='#about'><p>ABOUT</p></a>
                         <p>PROJECTS</p>
                         <p>CONTACT</p>

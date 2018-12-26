@@ -25,7 +25,7 @@ class Main extends Component {
     handleBox = () => {
         this.setState ({
             width: '30vw',
-            text: <Typing><h1>Hello, welcome to my portfolio!</h1></Typing>,
+            text: <Typing speed={50}><h1>Hello, welcome to my portfolio!</h1></Typing>,
             arrow: <Slide bottom><div><div onClick={this.scrollToMyRef} className='arrow'></div></div></Slide>,
         })
     }
@@ -37,7 +37,7 @@ class Main extends Component {
     }
     render() {
         return (
-            <div className='grid-container'>
+            <div id='home' className='grid-container'>
                 <div className='row'>
                     <div className='col-12 main'>
                         <div onMouseLeave={this.handleBoxLeave} onMouseEnter={this.handleBox} style={{width: this.state.width}} className='box'>
