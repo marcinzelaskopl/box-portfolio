@@ -2,10 +2,6 @@ import React, { Component } from 'react';
 import '../App.scss';
 
 class About extends Component {
-    constructor(props) {
-        super(props);
-        this.aboutRef = React.createRef();
-    }
     render() {
         return (
             <div>
@@ -24,6 +20,7 @@ class About extends Component {
                         <h1>HELLO,</h1>
                         <p>I am Marcin, Front End Developer based in Poland.</p>
                         <p>I am passionate about design, coding, video games and chilling.</p>
+                        <p>MOBA lover. CCG enthusiast.</p>
                         <p></p>
                         </div>
                     </div>
